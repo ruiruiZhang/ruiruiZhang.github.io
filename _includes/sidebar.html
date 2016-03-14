@@ -1,20 +1,29 @@
-<aside>
-	<div class="panel radius">
-		<h3>Sidebar</h3>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
-			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-	</div>
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="sidebar-logo">
+      <a href="/"><img src="/public/img/SooHu.jpg"></a>
+    </div>
+    <p>{{ site.description }}</p>
+  </div>
 
-  <img class="b30" src="http://dummyimage.com/303x16:9/df4949/e27b3f.png&amp;text=Ugly+Ad+Space" alt="">
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/"><i class="fa fa-home fa-fw"></i>&nbsp 主页·&nbspHome</a>
+    <a class="sidebar-nav-item" href="/archive/"><i class="fa fa-file-text-o fa-fw"></i>&nbsp 归档·&nbspArchive</a>
+    <a class="sidebar-nav-item" href="/category/"><i class="fa fa-book fa-fw"></i>&nbsp 分类·&nbspCategory</a>
+    <a class="sidebar-nav-item" href="/tag/"><i class="fa fa-tags fa-fw"></i>&nbsp 标签·&nbspTag</a>
+    <a class="sidebar-nav-item" href="/works/">works</a>
+    <a class="sidebar-nav-item" href="/about/"><i class="fa fa-hand-o-right fa-fw"></i>&nbsp 关于·&nbspAbout</a>
+    <span class="sidebar-nav-item"><i class="fa fa-info-circle">&nbsp&nbsp  </i>Currently v{{ site.version }}</span>
+  </nav>
 
-
-	<div class="border-dotted radius b30">
-		<img src="http://placekitten.com/271/270" alt="uh, Placekitten">
-		<p class="text-left">
-			This is an advertisment with a crazy cat! <a href="http://placekitten.com/">More cats, please!</a>
-		</p>
-	</div>
-</aside>
+  <div class="sidebar-item">
+    <p>
+      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+    </p>
+  </div>
+</div>
