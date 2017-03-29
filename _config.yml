@@ -27,3 +27,7 @@ comments :
     provider : duoshuo
     duoshuo :
       short_name : ruirui
+ codes:
+    external: true
+    family:
+    size:
